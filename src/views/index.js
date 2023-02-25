@@ -4,12 +4,19 @@
 * @Author STRUCTLOOPER
 * */
 import React from 'react';
+import {Helmet} from 'react-helmet';
+import {getStateFromSelector} from "../Redux/store";
+import {CURRENT_SESSION_STATE_REDUCER} from "../Redux/reducers";
 
 const Application = () => {
+    const {pageTitle, pageName} = getStateFromSelector(CURRENT_SESSION_STATE_REDUCER);
     return (
-        <div>
-            <h1>Boot app</h1>
-        </div>
+        <>
+            <Helmet>
+                <title>{pageTitle}</title>
+            </Helmet>
+            <h1>This is {pageName}</h1>
+        </>
     );
 };
 
