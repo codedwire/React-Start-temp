@@ -1,3 +1,7 @@
+/*
+* Primary color json which have some basic colors
+* @Author STRUCTLOOPER
+* */
 const primaryColors = {
     bckRed :'#F5D6D6',
     yellow :'#f3da75',

@@ -1,3 +1,7 @@
+/*
+* Local env setup json example file
+* @Author STRUCTLOOPER
+* */
 {
   "appName" : "port-structlooper",
   "env" : "DEV",
